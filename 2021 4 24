@@ -1,0 +1,19 @@
+
+import java.util.Scanner;
+public class Main {
+        public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        double side= sc.nextDouble();
+        double area2=area(n,side);
+
+        System.out.printf("%.2f",area2);
+
+
+        }
+        public static double area(int n, double side) {
+        double area1=0;
+        area1=(n*side*side)/(4*Math.tan(Math.PI/n));
+        return area1;
+        }
+        }
